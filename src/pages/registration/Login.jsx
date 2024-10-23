@@ -73,11 +73,11 @@ const Login = () => {
         <div className='flex justify-center items-center h-screen'>
             {loading && <Loader />}
             {/* Login Form  */}
-            <div className="login_Form bg-pink-50 px-8 py-6 border border-black rounded-xl shadow-md">
+            <div className="login_Form bg-black px-8 py-6 border border-gray-500 rounded-xl shadow-md">
 
                 {/* Top Heading  */}
                 <div className="mb-5">
-                    <h2 className='text-center text-2xl font-bold text-pink-500 '>
+                    <h2 className='text-center text-2xl font-bold text-yellow-500 '>
                         Login
                     </h2>
                 </div>
@@ -95,7 +95,7 @@ const Login = () => {
                                 email: e.target.value
                             })
                         }}
-                        className='bg-pink-50 border border-pink-200 px-2 py-2 w-96 rounded-md outline-none placeholder-pink-200'
+                        className='bg-yellow-500 border border-gray-500 px-2 py-2 w-96 rounded-md outline-none placeholder-yellow-800'
                     />
                 </div>
 
@@ -111,7 +111,7 @@ const Login = () => {
                                 password: e.target.value
                             })
                         }}
-                        className='bg-pink-50 border border-pink-200 px-2 py-2 w-96 rounded-md outline-none placeholder-pink-200'
+                        className='bg-yellow-500 border border-gray-500 px-2 py-2 w-96 rounded-md outline-none placeholder-yellow-800'
                     />
                 </div>
 
@@ -120,14 +120,14 @@ const Login = () => {
                     <button
                         type='button'
                         onClick={userLoginFunction}
-                        className='bg-pink-500 hover:bg-pink-600 w-full text-white text-center py-2 font-bold rounded-md '
+                        className='bg-yellow-500 hover:bg-yellow-600 w-full text-yellow-800 text-center py-2 font-bold rounded-md '
                     >
                         Login
                     </button>
                 </div>
 
                 <div>
-                    <h2 className='text-black'>Don't Have an account <Link className=' text-pink-500 font-bold' to={'/signup'}>Signup</Link></h2>
+                    <h2 className='text-white'>Don't Have an account <Link className=' text-yellow-500 font-bold' to={'/signup'}>Signup</Link></h2>
                 </div>
 
             </div>
