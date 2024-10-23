@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    background-color: yellow;
+}
+
+.link{
+    position: relative;
+}
+
+.link::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 0%;
+    background-color: white;
+    border-radius: 20px;
+    transition: all ease 1s;
+  }
+  
+.link:hover::after{
+    width: 100%;
+}
